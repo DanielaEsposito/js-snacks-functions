@@ -8,13 +8,20 @@ const vowelsNumber = (word)=>{
      let numberVowels = 0;
      const vowels = "aeiou"
     for(let i= 0; i < word.length ; i ++){
+        const vowelsString =[];
         currentElementvowels = word[i]
         if(vowels.includes(word[i])){
         numberVowels++;
         }
+        if(vowels === word[i]){
+        vowelsString.push(word[i]);
+        }
+        
+        
     }
    
-    return numberVowels;
+    return numberVowels ;
+    
     
     
 
