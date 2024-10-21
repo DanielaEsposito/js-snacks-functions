@@ -5,9 +5,16 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 
+const greeting =(stringa) => {
+    return "ciao" + " " + stringa ;
+} 
+ 
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
+const myName = greeting("Mario");
+console.log(myName);
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
