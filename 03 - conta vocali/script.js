@@ -5,21 +5,17 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 const vowelsNumber = (word)=>{
-    const wordSplit =[];
-    wordSplit.push(word.split("")) 
-    const vowels =["a", "e", "i","o","u"];
-    for(let i= 0; i < vowels.length ; i ++){
-        currentElementvowels = vowels[i]
+     let numberVowels = 0;
+     const vowels = "aeiou"
+    for(let i= 0; i < word.length ; i ++){
+        currentElementvowels = word[i]
+        if(vowels.includes(word[i])){
+        numberVowels++;
+        }
     }
-    for (let i = 0; i < wordSplit.length; i ++) {
-        currentElementword = wordSplit[i]   
-    }
-    if(wordSplit[i].inculdes( vowels[i])){
-        
-    }
-    // console.log("wordsplit ",wordSplit);
-    //console.log(word);
-    //console.log(vowels);
+   
+    return numberVowels;
+    
     
 
 }
