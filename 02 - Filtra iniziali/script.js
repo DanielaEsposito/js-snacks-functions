@@ -8,24 +8,23 @@ const firstLetterSelect = ( searchedLetter ,names ) =>{
     console.log(searchedLetter, names);
     const searchedElement =[];
     for(let i= 0; i < names.length ; i++){
-        const currentElement = names.length[i]; 
+        const currentElement = names[i]; 
         if(currentElement.charAt(0) === searchedLetter){
         searchedElement.push(currentElement);
         }
-        
-    return searchedElement;
-
 
     }
 
-    
+    return searchedElement; 
     
 }
-const result= firstLetterSelect(searchedLetter,names)
+
+
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const result= firstLetterSelect(searchedLetter,names)
+console.log(result);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
